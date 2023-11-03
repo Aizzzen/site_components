@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+#checkbox-menu, .toggle {
+    display: none;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #000;
+    text-decoration: none;
+    transition: background .2s linear;
+    font-size: 13px;
+    padding: 10px 15px;
+    align-self: center;
+}
+
+.menu li a:hover {
+    background: #ffcc01;
+    border-radius: 3px;
+}
+
+.menu li a.logo {
+    font-size: 25px;
+    margin-right: 240px;
+}
+
+.menu li a.contact {
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 765px) {
+    .toggle {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        color: #000;
+        background: #ffcc01;
+        transition: background .1s linear;
+    }
+    .toggle:hover {
+        background: #d3a900;
+    }
+    #checkbox-menu:checked + label .touch li {
+        visibility: visible;
+        opacity: 1;
+        transition: background .7s linear;
+    }
+    #checkbox-menu:checked + label .touch {
+        height: 350px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .3s linear;
+    }
+    .menu li {
+        display: flex;
+        align-self: center;
+        opacity: 0;
+        width: 95%;
+        visibility: hidden;
+    }
+    .menu li a {
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        width: 95%;
+    }
+    .menu li a.logo {
+        font-size: 21px;
+        margin-right: 0;
+    }
+
+    .menu li a.contact {
+        margin-right: 0;
+    }
+}
