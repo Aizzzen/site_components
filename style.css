@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Roboto Condensed", sans-serif;
+    /*font-family: "Roboto Condensed", sans-serif;*/
+    font-family: 'Roboto', sans-serif;
 }
 
 body, html {
@@ -16,6 +17,10 @@ nav {
 
 #checkbox-menu, .toggle {
     display: none;
+}
+
+.txtwhite {
+    color: #fff;
 }
 
 .menu {
@@ -65,17 +70,20 @@ nav {
 }
 
 .intro-img {
-    background-image: url("./img/room.jpeg");
+    /*background-image: url("./img/room.jpeg");*/
     height: 640px;
     width: 965px;
+    background: url("./img/jojo.jpg") center center no-repeat;
+    background-size: cover;
 }
 
 .intro .intro-title {
-    position: absolute;
-    /*position: relative;*/
+    /*position: absolute;*/
+    position: relative;
     font-size: 62px;
     top: 220px;
-    right: 750px;
+    right: 125px;
+    color: #000;
 }
 
 .intro-contact {
@@ -156,9 +164,14 @@ nav {
 }
 
 .card {
-    width: 348px;
+    width: 350px;
     background: #fff;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 350px;
+    height: 510px;
 }
 
 .card-container {
@@ -381,9 +394,14 @@ nav {
 }
 
 .agent-card {
-    max-width: 344px;
+    max-width: 350px;
     background: #fff;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.agent-card img {
+    width: 350px;
+    height: 510px;
 }
 
 .agent-card:hover {
@@ -422,11 +440,11 @@ nav {
 }
 
 .location i {
-    margin-right: 30px;
+    margin-right: 15px;
     font-size: 25px;
     color: #fff;
     position: relative;
-    top: 7px;
+    top: 2px;
 }
 
 .location-melbourn {
@@ -452,6 +470,11 @@ nav {
     font-size: 13px;
     margin-left: 130px;
     line-height: 30px;
+}
+
+.line-img img {
+    width: 541px;
+    height: 330px;
 }
 
 .add-line-right p {
@@ -595,13 +618,14 @@ hr {
         max-width: 100%;
     }
     .intro-img {
-        background-position: bottom 0 right 200px;
+        background-position: bottom 0 right 193px;
     }
     .intro .intro-title {
         position: relative;
         font-size: 25px;
         right: -10px;
         top: 95px;
+        color: #fff;
     }
     .intro-contact {
         position: relative;
@@ -666,6 +690,9 @@ hr {
         margin-left: 3%;
         margin-bottom: 15px;
     }
+    .services h2, .services p {
+        padding-left: 3%;
+    }
     .services-container {
         margin-top: 20px;
         flex-direction: column;
@@ -675,6 +702,18 @@ hr {
     }
     .services-text-container {
         width: 100%;
+    }
+    .services-text-container p {
+        padding-right: 9%;
+    }
+    .agents p, .agents h2 {
+        padding-left: 3%;
+    }
+    .agents h2 {
+        font-size: 30px;
+    }
+    .agents p {
+        font-size: 13px;
     }
     .agents-cards {
         flex-direction: column;
@@ -692,11 +731,11 @@ hr {
         padding: 15px 10px 18px 11px;
     }
     .location-melbourn {
-        left: 100px;
+        left: 30%;
         bottom: 50px;
     }
     .location-australia {
-        left: 60px;
+        left: 30%;
         bottom: 50px;
     }
     .add-line h3 {
@@ -713,9 +752,9 @@ hr {
         margin-left: 5%;
     }
     .show-more {
-        padding: 20px 50px 20px 35px;
+        padding: 20px 35px 20px 35px;
         font-size: 15px;
-        margin-left: 15%;
+        margin-left: 27%;
         margin-top: 20px;
     }
     .footer-block {
